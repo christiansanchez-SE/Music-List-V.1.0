@@ -65,6 +65,8 @@
     color: white;
   }
   
+/* Music addition list */
+
   .search-container {
     display: flex;
     border: 2px solid #ccc;
@@ -87,7 +89,7 @@
     cursor: pointer;
   }
   
-  /* ---- NEW Material ---- */
+  /* ----  ---- */
   
   .button1 {
     background: #efefef;
