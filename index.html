@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Music List</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/500d37e25d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+<!---------------------------------------------------------->
+
+    <section>
+      <div class="navContainer">
+        <div id="logo">
+          <img
+            id="logo1"
+            src="https://media3.giphy.com/media/ZXr7mOCKSkMrnuLNEu/giphy.gif"
+            alt=""
+          />
+        </div>
+
+        <ul class="nav-tags">
+          <li id="lettering" class="nav-t"><a href="#">About</a></li>
+          <li id="lettering" class="nav-t"><a href="#">Community</a></li>
+          <li id="lettering" class="nav-t"><a href="#">Locations</a></li>
+        </ul>
+
+        <button class="button1" type="button" onclick="toggleBtn()" id="btn">
+          <span></span>
+        </button>
+      </div>
+    </section>
+
+<!---------------------------------------------------------->
+
+
+    <div class="container">
+      <div class="list-tracker">
+        <h2>Favorite Music List Tracker</h2>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add your text" />
+          <button class="button2" onclick="addTask()">add</button>
+        </div>
+        <ul id="list-container"></ul>
+      </div>
+    </div>
+
+<!---------------------------------------------------------->
+
+    <div class="containerForm">
+      <div class="form">
+        <form id="myForm">
+          <label for="choose">Have you found this useful?</label>
+          <input type="text" id="choose" name="yesOrNo" required />
+          <span id="chooseError" class="error"></span><br /><br />
+          <button type="submit" class="button3">Submit</button>
+        </form>
+      </div>
+    </div>
+
+<!---------------------------------------------------------->
+    
+    <div class="containerTwo">
+      <button class="scrollUp" onclick="toggleButton()">Scroll Up</button>
+    </div>
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>
