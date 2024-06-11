@@ -8,7 +8,6 @@ This project serves as a demonstration of utilizing HTML, CSS, and JavaScript to
 - [Features](#features)
 - [Usage](#usage)
 - [Notes](#notes)
-- [Reflection](#reflection)
 - [Acknowledgements](#acknowledgements)
 
 ## Features
