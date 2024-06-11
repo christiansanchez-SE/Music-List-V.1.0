@@ -18,7 +18,7 @@ This project serves as a demonstration of utilizing HTML, CSS, and JavaScript to
 
 ### Dark Mode Toggle
 
-Click the provided button to switch between dark mode and light mode. The background and text colors adjust accordingly, offering a customized visual experience.
+- Click the provided button to switch between dark mode and light mode. The background and text colors adjust accordingly, offering a customized visual experience.
 
 ### Music List
 
@@ -28,14 +28,14 @@ Click the provided button to switch between dark mode and light mode. The backgr
 
 ### Form Validation
 
-Ensure data accuracy with the built-in form validation feature:
-The form verifies if the input is either "yes" or "no".
-If the input is empty or invalid, an error message will be displayed.
+- Ensure data accuracy with the built-in form validation feature:
+- The form verifies if the input is either "yes" or "no".
+- If the input is empty or invalid, an error message will be displayed.
 
 ### Smooth Scroll
 
-Enhance user experience with smooth scrolling:
-Click on the button to smoothly scroll back to the top of the page.
+- Enhance user experience with smooth scrolling:
+- Click on the button to smoothly scroll back to the top of the page.
 
 ## Usage
 
