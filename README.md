@@ -20,6 +20,13 @@ This project serves as a demonstration of utilizing HTML, CSS, and JavaScript to
 
 - Click the provided button to switch between dark mode and light mode. The background and text colors adjust accordingly, offering a customized visual experience.
 
+#### Preview
+- Day Mode
+![image](https://github.com/christiansanchez-SE/Music-List-V.1.0/assets/160565283/083e8cdb-ed15-46ba-a2d9-31878d8226e5)
+
+- Night Mode
+![image](https://github.com/christiansanchez-SE/Music-List-V.1.0/assets/160565283/2ffb791b-7b06-4b0a-a42e-7f675bb4111a)
+
 ### Music List
 
 - To add a song to the list, simply input its name into the designated box and click the "Add" button.
