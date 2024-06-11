@@ -34,25 +34,33 @@ function addTask(){
     if(inputBox.value === ''){
         alert("Add your song!");
     }
+    // The class name addList is assigned to this new list item (this can be used for styling purposes)
+    // The inner content of the <li> is set to the value entered in the inputBox
+    // The new <li> is appended to the listContainer
     else{
         let li = document.createElement("li");
         li.className = "addList"
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
+        // A new <span> element is created
+        // The <span> is appended to the newly created <li>
         let span = document.createElement("span");
         // This is the X-out button
         span.innerHTML = "\u00d7"
         li.appendChild(span); 
     }
+    // The value of the inputBox is cleared, making it ready for the next song entry
     inputBox.value = "";
 }
 
 // Toggles the checked class on the list item if it's clicked, marking it as completed
 // Removes the list item if the "X" span is clicked
 listContainer.addEventListener("click", function(event){
+    // If the clicked element (event.target) is a <li>, the checked class is toggled on this <li>
     if(event.target.tagName === "li"){
         event.target.classList.toggle("checked");
     }
+    // If the clicked element is a <span> (the "X" button), the parent element of this <span> (which is the <li>) is removed from the listContainer
     else if(event.target.tagName === "SPAN"){
         event.target.parentElement.remove();
     }
@@ -72,15 +80,21 @@ const form = document.getElementById("myForm");
 const chooseInput = document.getElementById("choose");
 const chooseError = document.getElementById("chooseError");
 
-
+// This line checks if all three elements (form, chooseInput, and chooseError) exist on the page. If any of them are missing, it logs an error message to the console and skips the rest of the code 
 if (form && chooseInput && chooseError) {
-    
+    // An event listener is added to the form element to listen for the submit event. This means the function inside will run when the form is submitted
     form.addEventListener("submit", function(event) {
+        // chooseInput.value.trim() removes any leading or trailing spaces from the input value
+        // If the trimmed input value is empty, an error message "Please enter your response" is displayed in the chooseError element
+        // event.preventDefault() prevents the form from being submitted
         if (!chooseInput.value.trim()) {
             chooseError.textContent = "Please enter your response";
             event.preventDefault(); 
         } else {
+            // If the input is not empty, the value is trimmed again and converted to lowercase using toLowerCase() to make the comparison case-insensitive
             const value = chooseInput.value.trim().toLowerCase(); 
+            // If the value is neither, an error message "Please enter 'yes' or 'no'" is displayed in the chooseError element
+            // event.preventDefault() is called again to prevent the form from being submitted
             if (value !== "yes" && value !== "no") {
                 chooseError.textContent = "Please enter 'yes' or 'no'";
                 event.preventDefault(); 
