@@ -1,8 +1,8 @@
 // This is a toggle that turns from bright to dark mode
-
 const body = document.querySelector("body");
 const btn = document.getElementById("btn");
 
+// btn.classList.toggle("active") toggles the active class on the button when it is clicked 
 function toggleBtn() {
     btn.classList.toggle("active");
     if (btn.classList.contains("active")) {
@@ -17,7 +17,6 @@ function toggleBtn() {
 }
 
 // This is the logic behind the Music list
-
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
